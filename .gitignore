@@ -1,5 +1,9 @@
 src/
-vendor/
+vendor/graham-campbell
+vendor/phpmailer
+vendor/phpoption
+vendor/symfony
+vendor/vlucas
 node_modules/
 gulpfile.js
 package.json
