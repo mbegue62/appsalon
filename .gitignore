@@ -1,3 +1,4 @@
+includes/
 src/
 vendor/graham-campbell
 vendor/phpmailer
@@ -8,5 +9,6 @@ node_modules/
 gulpfile.js
 package.json
 package-lock.json
+
 
 

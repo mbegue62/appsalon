@@ -3,7 +3,6 @@ namespace Classes;
 
 use PHPMailer\PHPMailer\PHPMailer;
 
-
 class Email {
     public $email;
     public $nombre;
@@ -19,15 +18,18 @@ class Email {
 
     public function enviarConfirmacion() {
         // Crear el objeto de email
-
         $email = new PHPMailer();
+        
+        // Configurar SMTP
         $email->isSMTP();
         $email->Host = 'smtp-relay.sendinblue.com';
         $email->SMTPAuth = true;
+        $email->SMTPSecure = 'tls';
         $email->Port = 587;
         $email->Username = 'mbegue62@yahoo.com.ar';
-        $email->Password = 'xsmtpsib-2c187e7313f66e54989050039e159adcb2f913f3061557458d12d40c59377913-b8PNGUCkHx0J7Wf5';
-
+        $email->Password = '8UkXZ9gNDGsbSp1m';
+        
+        // Contenido del email
         $email->setFrom('cuentas@appsalom.com');
         $email->addAddress($this->email);
         $email->Subject = 'Confirma tu Cuenta';

@@ -3,7 +3,7 @@ namespace Controllers;
 
 use Model\Cita;
 use Model\CitaServicio;
-use Model\servicio;
+use Model\Servicio;
 
 class APIController {
     public static function index() {
