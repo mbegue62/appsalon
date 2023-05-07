@@ -22,12 +22,12 @@ class Email {
         
         // Configurar SMTP
         $email->isSMTP();
-        $email->Host = 'smtp-relay.sendinblue.com';
+        $email->Host = 'sandbox.smtp.mailtrap.io';
         $email->SMTPAuth = true;
         $email->SMTPSecure = 'tls';
-        $email->Port = 587;
-        $email->Username = 'mbegue62@yahoo.com.ar';
-        $email->Password = '8UkXZ9gNDGsbSp1m';
+        $email->Port = 2525;
+        $email->Username = 'f5f22d8e2b5672';
+        $email->Password = '7ad75518c2bbe2';
         
         // Contenido del email
         $email->setFrom('cuentas@appsalom.com');
@@ -69,7 +69,7 @@ public function enviarInstrucciones() {
     $email->CharSet = 'UTF-8';
     $contenido = "<html>";
     $contenido.= "<p><strong> Hola " . $this->nombre . "</strong> Has solicitado reestablecer tu Password, sigue el siguiente enla para hacerlo </p>";
-    $contenido.= "<p>Presiona aquí: <a href='http://localhost:3000/recuperar?token=" . $this->token . 
+    $contenido.= "<p>Presiona aquí: <a href='http://apppsalon.alwaysdata.net/recuperar?token=" . $this->token . 
   "'>Reestablecer Password </a></p>";
     $contenido.= "<p>Si tú no solicitaste esta cuenta, puedes ignorar este mensaje</p>";
     $contenido.= "</html>";

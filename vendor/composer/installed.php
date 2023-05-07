@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'marcelo/app-salon_php_mvc_js_sass',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'ef1468e3f8790c9a9b86de5e6ed6f1f13c8cb44a',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'marcelo/app-salon_php_mvc_js_sass' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'ef1468e3f8790c9a9b86de5e6ed6f1f13c8cb44a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
